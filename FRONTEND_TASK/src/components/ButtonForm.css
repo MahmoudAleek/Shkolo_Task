@@ -1,0 +1,76 @@
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Center the form vertically */
+  background-color: #f8f9fa; /* Light background color */
+}
+
+.button-form {
+  background-color: #ffffff; /* White background for the form */
+  padding: 20px; /* Padding around the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 400px; /* Set a fixed width for the form */
+}
+
+.button-form h2 {
+  text-align: center; /* Center the title */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.button-form label {
+  display: block; /* Make labels block elements */
+  margin-bottom: 5px; /* Space between label and input */
+  font-weight: bold; /* Bold labels for emphasis */
+}
+
+/* Ensuring the box-sizing is applied */
+.button-form input,
+.button-form select {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding for inputs */
+  margin-bottom: 15px; /* Space between inputs */
+  border: 1px solid #ced4da; /* Border color */
+  border-radius: 4px; /* Rounded corners for inputs */
+  font-size: 16px; /* Font size */
+}
+
+.button-form input:focus,
+.button-form select:focus {
+  border-color: #80bdff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Subtle focus shadow */
+}
+
+.form-buttons {
+  display: flex; /* Flexbox for buttons */
+  justify-content: space-between; /* Space buttons apart */
+}
+
+.submit-button,
+.cancel-button {
+  padding: 10px 15px; /* Padding for buttons */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  font-size: 16px; /* Font size for buttons */
+}
+
+.submit-button {
+  background-color: #007bff; /* Primary button color */
+  color: white; /* White text */
+}
+
+.cancel-button {
+  background-color: #6c757d; /* Secondary button color */
+  color: white; /* White text */
+}
+
+.submit-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.cancel-button:hover {
+  background-color: #5a6268; /* Darker shade on hover */
+}
