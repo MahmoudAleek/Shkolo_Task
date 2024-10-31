@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ButtonController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('/buttons', [ButtonController::Class, 'index']);
+Route::get('/buttons/{id}', [ButtonController::Class, 'show']);
+Route::post('/buttons', [ButtonController::Class, 'store']);
+Route::put('/buttons/{id}', [ButtonController::Class, 'update']);
+Route::delete('/buttons/{id}', [ButtonController::Class, 'destroy']);
+
+// or we can use 
+// Route::apiResource('/buttons',[ButtonController::Class]);
+
